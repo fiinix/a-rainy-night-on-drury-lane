@@ -1,0 +1,25 @@
+
+$primaryColor: #15001f !default;
+$secondaryColor: #e69d00 !default;
+
+::-moz-selection {
+	background: $primaryColor;
+	text-shadow: none;
+	color: $whiteColor;
+}
+::selection {
+	background: $primaryColor;
+	text-shadow: none;
+	color: $whiteColor;
+}
+
+.island ::-moz-selection {
+	background: $secondaryColor;
+	text-shadow: none;
+	color: $primaryColor;
+}
+.island ::selection {
+	background: $secondaryColor;
+	text-shadow: none;
+	color: $primaryColor;
+}

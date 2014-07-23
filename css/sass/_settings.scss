@@ -1,0 +1,26 @@
+$primaryColor: #15001f;
+$secondaryColor: #e69d00;
+
+$blackColor: #222; /* protected variables */
+$whiteColor: #eee; /* protected variables */
+
+$fontWeight: 400;
+$fontSize: 20;
+$fontLeading: 32;
+$fontFamily: 'EB Garamond', Georgia, serif;
+$fontLineLength: 66;
+
+$headingWeight: 700;
+$headingFamily: 'Playfair Display', sans-serif;
+$headingH1: (
+	size:		48,
+	leading:	48
+);
+$headingH2: (
+	size:		30,
+	leading:	32
+);
+$headingH3: (
+	size:		24,
+	leading:	30
+);

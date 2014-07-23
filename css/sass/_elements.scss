@@ -1,0 +1,71 @@
+p {
+	margin: 0;
+	text-indent: em($fontLeading);
+	text-align: justify;
+
+	-ms-word-break: normal;
+	word-break: normal;
+	/* Non standard for webkit */
+	word-break: normal;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+}
+.align-right {
+	text-align: right;
+}
+
+.first-paragraph {
+	text-indent: 0;
+}
+.first-line {
+	text-transform: uppercase;
+	font-size: em(18);
+	line-height: em(30,18);
+}
+.chapter-numbering {
+	text-align: center;
+	text-indent: 0;
+	margin: 0 0 em($fontLeading/2) 0;
+
+}
+
+a {
+	text-decoration: none;
+	color:$secondaryColor;
+
+	&:visited {
+		// color: gray;
+	}
+	&:hover,
+	&:focus,
+	&:active {
+		border-bottom:1px solid $secondaryColor;
+		color: $primaryColor;
+	}
+}
+
+h1, h2, h3 {
+	font-family: $headingFamily;
+	font-weight: $headingWeight;
+	margin: 0;
+	letter-spacing: .01em;
+}
+
+h1 {
+	font-size: em(map-get($headingH1, size));
+	line-height: em(map-get($headingH1, leading),map-get($headingH1, size));
+	margin-bottom: map-get($headingH1, leading)/map-get($headingH1, size) *0.5em;
+}
+h2 {
+	font-size: em(map-get($headingH2, size));
+	line-height: em(map-get($headingH2, leading),map-get($headingH2, size));
+	margin-bottom: map-get($headingH2, leading)/map-get($headingH2, size) *0.5em;
+	text-align: center;
+}
+h3 {
+	font-size: em(map-get($headingH3, size));
+	line-height: em(map-get($headingH3, leading),map-get($headingH3, size));
+	margin-bottom: map-get($headingH3, leading)/map-get($headingH3, size) *0.5em;
+}
