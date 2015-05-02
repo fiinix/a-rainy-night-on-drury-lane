@@ -1,6 +1,6 @@
 p {
 	margin: 0;
-	text-indent: em($fontLeading);
+	text-indent: em($font-leading);
 	text-align: justify;
 
 	-ms-word-break: normal;
@@ -27,13 +27,13 @@ p {
 .chapter-numbering {
 	text-align: center;
 	text-indent: 0;
-	margin: 0 0 em($fontLeading/2) 0;
+	margin: 0 0 em($font-leading/2) 0;
 
 }
 
 a {
 	text-decoration: none;
-	color:$secondaryColor;
+	color:$secondary-color;
 
 	&:visited {
 		// color: gray;
@@ -41,31 +41,31 @@ a {
 	&:hover,
 	&:focus,
 	&:active {
-		border-bottom:1px solid $secondaryColor;
-		color: $primaryColor;
+		border-bottom:1px solid $secondary-color;
+		color: $primary-color;
 	}
 }
 
 h1, h2, h3 {
-	font-family: $headingFamily;
-	font-weight: $headingWeight;
+	font-family: $heading-family;
+	font-weight: $heading-weight;
 	margin: 0;
 	letter-spacing: .01em;
 }
 
 h1 {
-	font-size: em(map-get($headingH1, size));
-	line-height: em(map-get($headingH1, leading),map-get($headingH1, size));
-	margin-bottom: map-get($headingH1, leading)/map-get($headingH1, size) *0.5em;
+	font-size: em(map-get($heading-alpha, size));
+	line-height: em(map-get($heading-alpha, leading),map-get($heading-alpha, size));
+	margin-bottom: map-get($heading-alpha, leading)/map-get($heading-alpha, size) *0.5em;
 }
 h2 {
-	font-size: em(map-get($headingH2, size));
-	line-height: em(map-get($headingH2, leading),map-get($headingH2, size));
-	margin-bottom: map-get($headingH2, leading)/map-get($headingH2, size) *0.5em;
+	font-size: em(map-get($heading-beta, size));
+	line-height: em(map-get($heading-beta, leading),map-get($heading-beta, size));
+	margin-bottom: map-get($heading-beta, leading)/map-get($heading-beta, size) *0.5em;
 	text-align: center;
 }
 h3 {
-	font-size: em(map-get($headingH3, size));
-	line-height: em(map-get($headingH3, leading),map-get($headingH3, size));
-	margin-bottom: map-get($headingH3, leading)/map-get($headingH3, size) *0.5em;
+	font-size: em(map-get($heading-gamma, size));
+	line-height: em(map-get($heading-gamma, leading),map-get($heading-gamma, size));
+	margin-bottom: map-get($heading-gamma, leading)/map-get($heading-gamma, size) *0.5em;
 }

@@ -2,7 +2,10 @@
 @import "sass/normalize";
 @import "sass/clearfix";
 
+// Load functions before mixins because some mixins require functions to function.
 @import "sass/functions";
+
+@import "sass/mixins";
 
 @import "sass/settings";
 
