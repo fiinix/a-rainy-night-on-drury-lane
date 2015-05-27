@@ -1,4 +1,5 @@
 p {
+
 	margin: 0;
 	text-indent: em($font-leading);
 	text-align: justify;
@@ -11,6 +12,7 @@ p {
 	-moz-hyphens: auto;
 	-ms-hyphens: auto;
 	hyphens: auto;
+
 }
 
 .toc p {
@@ -20,17 +22,27 @@ p {
 }
 
 .align-right {
+
 	text-align: right;
+
+}
+
+.float-right {
+
+	float: right;
+
 }
 
 .first-paragraph {
 	text-indent: 0;
 }
+
 .first-line {
 	text-transform: uppercase;
 	font-size: em(18);
 	line-height: em(30,18);
 }
+
 .chapter-numbering {
 	text-align: center;
 	text-indent: 0;
@@ -38,41 +50,65 @@ p {
 
 }
 
+.author-image {
+
+	max-width: 30%;
+	border-radius: 0.25em;
+
+	margin-right: -30%;
+
+	margin-left: 1.5em;
+	margin-bottom: 1.5em;
+
+}
+
 a {
+
 	text-decoration: none;
 	color:$secondary-color;
 
 	&:visited {
+
 		// color: gray;
+
 	}
+
 	&:hover,
 	&:focus,
 	&:active {
-		border-bottom:1px solid $secondary-color;
+
+		border-bottom: 1px solid $secondary-color;
 		color: $primary-color;
+
 	}
+
 }
 
 h1, h2, h3 {
 	font-family: $heading-family;
 	font-weight: $heading-weight;
 	margin: 0;
-	letter-spacing: .01em;
+	letter-spacing: .015em;
 }
 
 h1 {
+
 	font-size: em(map-get($heading-alpha, size));
-	line-height: em(map-get($heading-alpha, leading),map-get($heading-alpha, size));
+	line-height: number(map-get($heading-alpha, leading),map-get($heading-alpha, size));
 	margin-bottom: map-get($heading-alpha, leading)/map-get($heading-alpha, size) *0.5em;
+
 }
+
 h2 {
+
 	font-size: em(map-get($heading-beta, size));
-	line-height: em(map-get($heading-beta, leading),map-get($heading-beta, size));
+	line-height: number(map-get($heading-beta, leading),map-get($heading-beta, size));
 	margin-bottom: map-get($heading-beta, leading)/map-get($heading-beta, size) *0.5em;
 	text-align: center;
 }
+
 h3 {
 	font-size: em(map-get($heading-gamma, size));
-	line-height: em(map-get($heading-gamma, leading),map-get($heading-gamma, size));
+	line-height: number(map-get($heading-gamma, leading),map-get($heading-gamma, size));
 	margin-bottom: map-get($heading-gamma, leading)/map-get($heading-gamma, size) *0.5em;
 }
