@@ -1,17 +1,43 @@
+/* ==========================================================================
+
+
+   A Rainy Night on Drury Lane
+
+
+   ========================================================================== */
+
+
+
 @import "sass/box-sizing";
 @import "sass/normalize";
 @import "sass/clearfix";
 
-// Load functions before mixins because some mixins require functions to function.
+
+
+/**
+ * Load functions before mixins because some mixins require functions
+ * to work.
+ */
 @import "sass/functions";
+
+
 
 @import "sass/mixins";
 
+
+
 @import "sass/settings";
+
+
 
 @import "sass/layout";
 @import "sass/elements";
+@import "sass/headings";
+@import "sass/links";
 @import "sass/buttons";
 @import "sass/selection";
+@import "sass/author-image";
+
+
 
 @import "sass/basil";

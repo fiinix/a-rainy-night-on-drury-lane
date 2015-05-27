@@ -1,8 +1,21 @@
+/* ==========================================================================
+
+
+   Layout
+
+
+   ========================================================================== */
+
+
+
 html {
 	
 	font-size: percentage($font-size/16);
 
 }
+
+
+
 html,
 body {
 
@@ -10,6 +23,9 @@ body {
 	height: 100%;
 
 }
+
+
+
 body {
 
 	font-weight: $font-weight;
@@ -22,13 +38,79 @@ body {
 
 }
 
+
+
 .viewport {
 
 	width: 100%;
 	height: 100vh;
 	display: table;
 	margin: 0 auto;
-	
+
+}
+
+
+
+.island {
+
+	background: $primary-color;
+	color: $white;
+
+}
+
+
+
+.splash-island {
+
+	background-image: url(../img/noise.png);
+
+	&:after {
+
+		content:" ";
+		display:block;
+		position:absolute;
+		bottom:0;
+		left:0;
+		width:100%;
+		height:37px;
+		background:	url(../img/s19.png) repeat-x bottom left,
+		url(../img/s17.png) repeat-x bottom left,
+		url(../img/s11.png) repeat-x bottom left,
+		url(../img/s7.png) repeat-x bottom left,
+		url(../img/s3.png) repeat-x bottom left transparent;
+
+	}
+
+}
+
+
+
+.splash-island--reverse {
+
+	background-color: $primary-color;
+	color: $white;
+
+	&:after {
+
+		background:	url(../img/s19-w.png) repeat-x bottom left,
+		url(../img/s17-w.png) repeat-x bottom left,
+		url(../img/s11-w.png) repeat-x bottom left,
+		url(../img/s7-w.png) repeat-x bottom left,
+		url(../img/s3-w.png) repeat-x bottom left transparent;
+
+	}
+
+}
+
+
+
+.container {
+
+	position: relative;
+	width:100%;
+	display: table-cell;
+	vertical-align: middle;
+
 	padding: em($font-leading /3);
 
 	@include mq($breakpoint-wrist) {
@@ -51,75 +133,6 @@ body {
 
 }
 
-
-.island {
-
-	background: $primary-color;
-	color: $white;
-
-}
-
-.splash-island {
-
-	// padding: 0;
-
-	&:after {
-
-		content:" ";
-		display:block;
-		position:absolute;
-		bottom:0;
-		left:0;
-		width:100%;
-		height:37px;
-		background:	url(../img/s19.png) repeat-x bottom left,
-		url(../img/s17.png) repeat-x bottom left,
-		url(../img/s11.png) repeat-x bottom left,
-		url(../img/s7.png) repeat-x bottom left,
-		url(../img/s3.png) repeat-x bottom left transparent;
-
-	}
-
-}
-
-
-.splash-island--reverse {
-
-	background-color: $primary-color;
-	color: $white;
-
-	&:after {
-
-		background:	url(../img/s19-w.png) repeat-x bottom left,
-		url(../img/s17-w.png) repeat-x bottom left,
-		url(../img/s11-w.png) repeat-x bottom left,
-		url(../img/s7-w.png) repeat-x bottom left,
-		url(../img/s3-w.png) repeat-x bottom left transparent;
-
-	}
-
-}
-
-
-.container {
-
-	position: relative;
-	width:100%;
-	display: table-cell;
-	vertical-align: middle;
-
-	.splash-island & {
-
-		// height: 50%;
-		// background-color: $white;
-		background-image: url(../img/noise.png);
-
-		// color: $primary-color;
-		// vertical-align: bottom;
-
-	}
-
-}
 
 
 .row {

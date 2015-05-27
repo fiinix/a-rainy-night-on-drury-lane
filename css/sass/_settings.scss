@@ -1,17 +1,38 @@
+/* ==========================================================================
+
+
+   Settings
+
+
+   ========================================================================== */
+
+
+
 $russian-black: #15001f;
 $tangerine: #e69d00;
+
+
 
 $primary-color: $russian-black;
 $secondary-color: $tangerine;
 
+
+
 $black: #222; /* protected variables */
 $white: #eee; /* protected variables */
+
+
 
 $font-weight: 400;
 $font-size: 20;
 $font-leading: 32;
 $font-family: 'EB Garamond', Georgia, serif;
+
+
+
 $font-line-length: 66;
+
+
 
 $heading-weight: 700;
 $heading-family: 'Playfair Display', sans-serif;
@@ -27,6 +48,8 @@ $heading-gamma: (
 	size:		24,
 	leading:	30
 );
+
+
 
 /**
  * $font-size need to be set for this to work properly.
