@@ -1,0 +1,40 @@
+/* ==========================================================================
+
+
+   Headings
+
+
+   ========================================================================== */
+
+
+
+h1, h2, h3 {
+
+	font-family: $heading-family;
+	font-weight: $heading-weight;
+	margin: 0;
+	letter-spacing: .015em;
+	
+}
+
+h1 {
+
+	font-size: em(map-get($heading-alpha, size));
+	line-height: number(map-get($heading-alpha, leading),map-get($heading-alpha, size));
+	margin-bottom: map-get($heading-alpha, leading)/map-get($heading-alpha, size) *0.5em;
+
+}
+
+h2 {
+
+	font-size: em(map-get($heading-beta, size));
+	line-height: number(map-get($heading-beta, leading),map-get($heading-beta, size));
+	margin-bottom: map-get($heading-beta, leading)/map-get($heading-beta, size) *0.5em;
+	text-align: center;
+}
+
+h3 {
+	font-size: em(map-get($heading-gamma, size));
+	line-height: number(map-get($heading-gamma, leading),map-get($heading-gamma, size));
+	margin-bottom: map-get($heading-gamma, leading)/map-get($heading-gamma, size) *0.5em;
+}
