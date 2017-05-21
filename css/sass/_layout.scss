@@ -30,11 +30,18 @@ body {
 
 	font-weight: $font-weight;
 	font-family: $font-family;
-	font-size: 1em;
-	line-height: #{number($font-leading)};
+	font-size: 0.9em;
+	line-height: 1.4;
 	background: $white;
 	color: $black;
 	overflow-x: hidden;
+
+	@include mq($breakpoint-lap) {
+
+		font-size: 1em;
+		line-height: #{number($font-leading)};
+
+	}
 
 }
 
@@ -43,9 +50,11 @@ body {
 .viewport {
 
 	width: 100%;
-	height: 100vh;
-	display: table;
-	margin: 0 auto;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	//margin: 0 auto;
 
 }
 
@@ -61,6 +70,8 @@ body {
 
 
 .splash-island {
+
+	position: relative;
 
 	background-image: url(../img/noise.png);
 
@@ -108,14 +119,15 @@ body {
 
 	position: relative;
 	width:100%;
-	display: table-cell;
-	vertical-align: middle;
+	//display: flex;
+	//justify-content: center;
+	//align-items: center;
 
-	padding: em($font-leading /3);
+	padding: em($font-leading) em($font-leading /3);
 
 	@include mq($breakpoint-wrist) {
 
-		padding: em($font-leading /2);
+		padding: em($font-leading) em($font-leading /2);
 
 	}
 

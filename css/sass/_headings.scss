@@ -17,24 +17,51 @@ h1, h2, h3 {
 	
 }
 
-h1 {
+h1, .size--xxl {
 
-	font-size: em(map-get($heading-alpha, size));
-	line-height: number(map-get($heading-alpha, leading),map-get($heading-alpha, size));
-	margin-bottom: map-get($heading-alpha, leading)/map-get($heading-alpha, size) *0.5em;
+	font-size: em(30);
+	line-height: number(32,30);
+	margin-bottom: 32/30 *0.5em;
+	text-align: left;
+
+	@include mq($breakpoint-lap) {
+
+		font-size: em(48);
+		line-height: number(48,48);
+		margin-bottom: 48/48 *0.5em;
+
+	}
 
 }
 
-h2 {
+h2, .size--xl {
 
-	font-size: em(map-get($heading-beta, size));
-	line-height: number(map-get($heading-beta, leading),map-get($heading-beta, size));
-	margin-bottom: map-get($heading-beta, leading)/map-get($heading-beta, size) *0.5em;
+	font-size: em(24);
+	line-height: number(30,24);
+	margin-bottom: 30/24 *0.5em;
 	text-align: center;
+
+	@include mq($breakpoint-lap) {
+
+		font-size: em(30);
+		line-height: number(32,30);
+		margin-bottom: 32/30 *0.5em;
+
+	}
 }
 
-h3 {
-	font-size: em(map-get($heading-gamma, size));
-	line-height: number(map-get($heading-gamma, leading),map-get($heading-gamma, size));
-	margin-bottom: map-get($heading-gamma, leading)/map-get($heading-gamma, size) *0.5em;
+h3, .size--l {
+
+	font-size: em(20);
+	line-height: number(24,20);
+	margin-bottom: 24/20 *0.5em;
+	text-align: left;
+
+	@include mq($breakpoint-lap) {
+
+		font-size: em(24);
+		line-height: number(30,24);
+		margin-bottom: 30/24 *0.5em;
+
+	}
 }

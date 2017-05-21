@@ -1,7 +1,7 @@
 p {
 
 	margin: 0;
-	text-indent: em($font-leading);
+	text-indent: 0.5em;
 	text-align: justify;
 
 	-ms-word-break: normal;
@@ -13,11 +13,18 @@ p {
 	-ms-hyphens: auto;
 	hyphens: auto;
 
+	@include mq($breakpoint-lap) {
+
+		text-indent: em($font-size);
+
+	}
+
 }
 
 .toc p {
 
 	text-indent: 0;
+	text-align: left;
 
 }
 
@@ -35,6 +42,12 @@ p {
 
 .first-paragraph {
 	text-indent: 0;
+}
+
+.normal-paragraph {
+	text-align: left;
+	text-indent: 0;
+	margin-bottom: em($font-leading);
 }
 
 .first-line {
